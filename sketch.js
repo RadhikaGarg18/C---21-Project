@@ -6,7 +6,7 @@ function setup (){
     speed = random(55,90);
     weight = random(400,1500);
     thickness = random(22,83)
-    bullet = createSprite(50,200,70,50);
+    bullet = createSprite(50,200,70,2);
     bullet.velocityX = speed;
     bullet.shapeColor = "white";
     wall = createSprite(1200,200,thickness,200);
