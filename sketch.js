@@ -45,13 +45,13 @@ function draw(){
             wall.shapeColor = color(0,255,0);
         }
      }
-    hasCollided();
+    
     drawSprites();
 }
 
-function hasCollided(){
-    bulletRightEdge = bullet.x + bullet.width;
-    wallLeftEdge = wall.x;
+function hasCollided(lbullet,lwall){
+    bulletRightEdge = lbullet.x + lbullet.width;
+    wallLeftEdge = lwall.x;
 
     if(bulletRightEdge >= wallLeftEdge){
         return true;
